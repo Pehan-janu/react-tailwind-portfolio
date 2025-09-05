@@ -20,7 +20,9 @@ export const HeroSection = () =>{
           </h1>
 
           <p calssName="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            ---------------------------
+              A second-year Computer Science undergraduate and aspiring full-stack developer, 
+              passionate about exploring new technologies, learning modern stacks, 
+              and applying my skills to real-world projects.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
@@ -31,7 +33,7 @@ export const HeroSection = () =>{
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 trasform -transale-x-1/2 flex flex-col items-center animate-bounce">
+      <div className="absolute bottom-8 left-1/2 trasform -translate-x-1/2 flex flex-col items-center animate-bounce">
         <span className="text-sm text-muted-foreground mb-2">Scroll</span>
         <ArrowDown className="h-5 w-5 text-primary" />
       
