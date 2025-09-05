@@ -2,7 +2,7 @@ import {ArrowDown } from "lucide-react";
 export const HeroSection = () =>{
   return(
     <section
-      id="Hero"
+      id="hero"
       className="retative min-h-screen flex flex-col item-center justify-center px-4"
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
