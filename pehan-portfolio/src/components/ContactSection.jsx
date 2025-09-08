@@ -51,79 +51,55 @@ export const ContactSection = () => {
         </p>       
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-11">
-          <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6">
-              {" "}
+          <div className="flex flex-col items-center justify-center h-full">
+            <h3 className="text-2xl font-semibold mb-6 text-center">
               Contact Information
             </h3>
 
-            <div className="space-y-6 justify-center">
+            <div className="space-y-6 w-full max-w-xs">
 
-              <div className="flex items-start space-x-4">
+              <div className="flex items-center space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" /> {" "}
+                  <Mail className="h-6 w-6 text-primary" />
                 </div>
-                <div>
-                  <h4 className="font-medium">Email</h4>
-                  <a
-                    href="mailto:pehanjanu@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    pehanjanu@gmail.com
-                  </a>
-                </div>
+                <h4 className="font-medium">Email&nbsp;&nbsp; :</h4>
+                <a
+                  href="mailto:pehanjanu@gmail.com"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  pehanjanu@gmail.com
+                </a>
               </div>
 
-              <div className="flex items-start space-x-4">
+              <div className="flex items-center space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" /> {" "}
+                  <Phone className="h-6 w-6 text-primary" />
                 </div>
-                <div>
-                  <h4 className="font-medium">Phone</h4>
-                  <a
-                    href="tel:+94 706676699"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    +94 70 667 6699
-                  </a>
-                </div>
+                <h4 className="font-medium">Phone&nbsp;&nbsp; :</h4>
+                <a
+                  href="tel:+94 706676699"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  +94 70 667 6699
+                </a>
               </div>
               
-              <div className="flex items-start space-x-4">
+              <div className="flex items-center space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Map className="h-6 w-6 text-primary" /> {" "}
+                  <Map className="h-6 w-6 text-primary" />
                 </div>
-                <div>
-                  <h4 className="font-medium">Location</h4>
-                  <a
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    Mount Lavinia, Sri Lanka
-                  </a>
-                </div>
+                <h4 className="font-medium">Location :</h4>
+                <span className="text-muted-foreground">Tangalle , Sri Lanka</span>
               </div>
             </div>
 
-            <div className="pt-8">
-              <h4 className="font-medium mb-4"> Connect With Me</h4>
-              <div className="flex space-x-4 justify-center">
-
-                <a href="#" target="_blank">
-                  <Linkedin />
-                </a>
-
-                <a href="#" target="_blank">
-                  <Instagram />
-                </a>
-
-                <a href="#" target="_blank">
-                  <Github />
-                </a>
-
-                <a href="#" target="_blank">
-                  <Facebook />
-                </a>
-
+            <div className="pt-12 flex flex-col items-center">
+              <h4 className="font-medium mb-4 text-center">Connect With Me</h4>
+              <div className="flex space-x-6 text-2xl">
+                <a href="#" target="_blank"><Linkedin /></a>
+                <a href="#" target="_blank"><Instagram /></a>
+                <a href="#" target="_blank"><Github /></a>
+                <a href="#" target="_blank"><Facebook /></a>
               </div>
             </div>
           </div>
