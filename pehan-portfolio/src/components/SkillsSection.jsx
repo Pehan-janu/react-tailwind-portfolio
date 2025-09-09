@@ -37,7 +37,7 @@ export const SkillsSection = () => {
     (skill) => activeCategory === "All" || skill.category === activeCategory
   );
   return (
-    <section id="Skills" className="py-24 px-4 relative bg-background/30">
+  <section id="skills" className="py-24 px-4 relative bg-background/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           My <span className="text-primary">Skills</span>
