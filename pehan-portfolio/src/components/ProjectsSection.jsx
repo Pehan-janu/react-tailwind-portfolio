@@ -1,47 +1,34 @@
-import {ExternalLink, Github, ArrowRight} from "lucide-react";
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
+
 const projects = [
   {
-   id: 1,
-   title: "Chat App",
-   description: "Create a Real-time chat app using MERN stack",
-   image: "/projects/1.jpg",
-   tags: ["React", "Node.js", "MongoDB", "Express.js", "Socket.io"],
-   demoUrl: "#",
-   githubUrl: "#",
+    id: 1,
+    title: "AI Resume Analyzer",
+    description: "An intelligent web application that analyzes resumes using AI to provide actionable feedback, scoring, and improvement suggestions.",
+    image: "/projects/1.png",
+    tags: ['React','Typescript','TailwindCSS','Puter_API','Vite'],
+    demoUrl: "https://puter.com/app/pehans-ai-resume-analyzer-124",
+    githubUrl: "https://github.com/Pehan-janu/Ai-Resume-Analyzer.git",
   },
-
   {
     id: 2,
-    title: "E-commerce Website",
-    description: "Develop a full-featured e-commerce website with shopping cart and payment integration",
-    image: "/projects/2.jpg",
-    tags: ["Next.js", "Stripe", "MongoDB", "Tailwind CSS"],
+    title: "Notepad Application",
+    description: "Full-stack Notes app built with MongoDB, Express, React, and Node.js. Includes a fully functional REST API, CRUD operations, rate limiting for security, and a responsive, modern UI for seamless user experience.",
+    image: "/projects/2.png",
+    tags: ['MERN Stack', 'REST API', 'CRUD', 'Responsive Design'],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Pehan-janu/notes-app.git",
   },
-
-  {
-    id: 3,
-    title: "Portfolio Website",
-    description: "Design and build a personal portfolio website to showcase projects and skills",
-    image: "/projects/3.jpg",
-    tags: ["React", "Tailwind CSS", "Framer Motion"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  
-
 ];
 
 export const ProjectsSection = () => {
-  return(
+  return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl">
-          {" "}
           Featured <span className="text-primary">Projects</span>
         </h2>
-
+        <br />
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Here are some of the projects I've worked on recently. Click on any project to learn more about it.
           Each project highlights my skills and experience.
@@ -49,10 +36,7 @@ export const ProjectsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, key) => (
-            <div 
-              key={key} 
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
-            >
+            <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover flex flex-col">
               <div className="h-48 overflow-hidden">
                 <img 
                   src={project.image} 
@@ -61,21 +45,20 @@ export const ProjectsSection = () => {
                 />
               </div>
 
-              <div className="p-6">
+              <div className="p-6 flex flex-col h-full">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                  {project.tags.map((tag, idx) => (
+                    <span key={idx} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                       {tag}
                     </span>
                   ))}
                 </div>
 
-              <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-              <p className="text-muted-foreground text-sm mb-4">
-                {project.description}
-              </p>
-              <div className="flex justify-between items-center">
-                <div className="flex space-x-3">
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+
+                {/* Icons at the bottom */}
+                <div className="flex space-x-3 mt-auto">
                   <a 
                     href={project.demoUrl}
                     target="_blank"
@@ -91,7 +74,6 @@ export const ProjectsSection = () => {
                     <Github size={20}/>
                   </a>
                 </div>
-              </div>
               </div>
             </div>
           ))}
