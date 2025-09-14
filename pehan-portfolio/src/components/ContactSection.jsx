@@ -64,10 +64,10 @@ export const ContactSection = () => {
                 </div>
                 <h4 className="font-medium">Email&nbsp;&nbsp; :</h4>
                 <a
-                  href="mailto:pehanjanu@gmail.com"
+                  href="mailto:pehan.20231161@iit.ac.lk"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  pehanjanu@gmail.com
+                  pehan.20231161@iit.ac.lk
                 </a>
               </div>
 
@@ -96,10 +96,10 @@ export const ContactSection = () => {
             <div className="pt-12 flex flex-col items-center">
               <h4 className="font-medium mb-4 text-center">Connect With Me</h4>
               <div className="flex space-x-6 text-2xl">
-                <a href="#" target="_blank"><Linkedin /></a>
-                <a href="#" target="_blank"><Instagram /></a>
-                <a href="#" target="_blank"><Github /></a>
-                <a href="#" target="_blank"><Facebook /></a>
+                <a href="https://www.linkedin.com/in/pehan-gunawardana/" target="_blank"><Linkedin /></a>
+                <a href="https://www.instagram.com/pehan_januka/" target="_blank"><Instagram /></a>
+                <a href="https://github.com/Pehan-janu" target="_blank"><Github /></a>
+                <a href="https://www.facebook.com/pehan.januka.1" target="_blank"><Facebook /></a>
               </div>
             </div>
           </div>
