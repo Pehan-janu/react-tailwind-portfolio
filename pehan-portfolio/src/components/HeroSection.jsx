@@ -20,9 +20,7 @@ export const HeroSection = () =>{
           </h1>
 
           <p calssName="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-              A second-year Computer Science undergraduate and aspiring full-stack developer, 
-              passionate about exploring new technologies, learning modern stacks, 
-              and applying my skills to real-world projects.
+              A second year Computer Science undergraduate and aspiring Full Stack Developer, passionate about building real world applications, mastering modern technologies, exploring AWS and AI, and creating impactful digital experiences.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
